@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Categoria.java</file>
             <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Usuario.java</file>
             <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/util/HibernateUtil.java</file>
@@ -23,6 +24,11 @@
             <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Prestamo_det.java</file>
             <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Editorial.java</file>
             <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Ubigeo.java</file>
+=======
+            <file>file:/C:/Users/CAMILO%20SALAS/Documents/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/prueba/Main.java</file>
+            <file>file:/C:/Users/CAMILO%20SALAS/Documents/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/entity/Ubigeo.java</file>
+            <file>file:/C:/Users/CAMILO%20SALAS/Documents/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/UbigeoDaoImpl.java</file>
+>>>>>>> 1ec3233526bfa945f72ac85780584751d7e551a6
         </group>
     </open-files>
 </project-private>

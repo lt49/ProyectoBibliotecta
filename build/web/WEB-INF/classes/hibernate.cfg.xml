@@ -8,6 +8,11 @@
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">admin</property>
     <mapping class="ofelia.model.entity.Usuario"/>
+<<<<<<< HEAD
     <mapping class="ofelia.model.entity.Persona"/>
+=======
+    <mapping class="ofelia.model.entity.Ubigeo"/>
+    
+>>>>>>> 1ec3233526bfa945f72ac85780584751d7e551a6
   </session-factory>
 </hibernate-configuration>

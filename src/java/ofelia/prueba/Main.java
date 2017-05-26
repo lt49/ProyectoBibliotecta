@@ -5,12 +5,20 @@
  */
 package ofelia.prueba;
 
+<<<<<<< HEAD
 import java.util.List;
 import ofelia.model.dao.PersonaDAO;
 import ofelia.model.dao.UsuarioDAO;
 import ofelia.model.dao.impl.PersonaDaoImpl;
 import ofelia.model.dao.impl.UsuarioDaoImpl;
 import ofelia.model.entity.Persona;
+=======
+import ofelia.model.dao.UbigeoDAO;
+import ofelia.model.dao.UsuarioDAO;
+import ofelia.model.dao.impl.UbigeoDaoImpl;
+import ofelia.model.dao.impl.UsuarioDaoImpl;
+import ofelia.model.entity.Ubigeo;
+>>>>>>> 1ec3233526bfa945f72ac85780584751d7e551a6
 import ofelia.model.entity.Usuario;
 
 /**
@@ -21,6 +29,7 @@ public class Main {
     
     public static void main(String[] args) {
         Main m = new Main();
+<<<<<<< HEAD
 //        m.validarUsuario("lt49", "123");
 //        m.TestListarUsuario();
 //        m.TestAgregarUsuario();
@@ -32,6 +41,14 @@ public class Main {
 //        m.TestEliminarPersona();
 //        m.TestEditarPersona();
         
+=======
+        //m.validarUsuario("isai", "isa123");
+        //m.listarUsuarios();
+         //m.listarUbigeo();
+         //m.agregarUbigeo();
+         //m.actualizarUbigeo();
+         m.eliminarUbigeo();
+>>>>>>> 1ec3233526bfa945f72ac85780584751d7e551a6
     }
     
     public void validarUsuario(String user, String pass) {
@@ -140,4 +157,47 @@ public class Main {
         }
     }
     
+    public void listarUsuarios(){
+        UsuarioDAO dao = new UsuarioDaoImpl();
+        for (Usuario usuario : dao.listarUsuario()) {
+            System.out.println("Usuario: "+usuario.getUsuario());
+        }
+    }
+    
+    public void listarUbigeo(){
+        UbigeoDAO dao = new UbigeoDaoImpl();
+        for(Ubigeo ubigeo : dao.listarUbigeo()){
+            System.out.println("Ubigeo: "+ubigeo.getNombre());
+        }
+    }
+    
+    public void agregarUbigeo(){
+        UbigeoDAO dao = new UbigeoDaoImpl();
+        Ubigeo ubigeo = new Ubigeo();
+        ubigeo.setNombre("New York");
+        ubigeo.setUbigeo_sup(7);
+        if(dao.agregarUbigeo(ubigeo)){
+            System.out.println("exito");
+        }
+    }
+    
+    public void actualizarUbigeo(){
+        UbigeoDAO dao = new UbigeoDaoImpl();
+        Ubigeo ubigeo = new Ubigeo();
+        ubigeo.setIdubigeo(15);
+        ubigeo.setNombre("actualizado");
+        ubigeo.setUbigeo_sup(1);
+        if(dao.editarUbigeo(ubigeo)){
+            System.out.println("exito");
+        }
+    }
+    
+    public void eliminarUbigeo(){
+        UbigeoDAO dao = new UbigeoDaoImpl();
+        Ubigeo ubigeo = new Ubigeo();
+        ubigeo.setIdubigeo(15);
+        if(dao.eliminarUbigeo(15)){
+            System.out.println("Eliminado");
+        }
+    }
 }

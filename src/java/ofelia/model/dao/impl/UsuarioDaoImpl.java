@@ -12,6 +12,7 @@ import java.util.List;
 import ofelia.model.entity.Usuario;
 import ofelia.model.dao.UsuarioDAO;
 import ofelia.model.util.HibernateUtil;
+import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -26,6 +27,7 @@ public class UsuarioDaoImpl implements UsuarioDAO{
     
     @Override
     public List<Usuario> listarUsuario() {
+<<<<<<< HEAD
        SessionFactory sf = null;
         Session session = null;
         List<Usuario> lista = null;
@@ -40,6 +42,28 @@ public class UsuarioDaoImpl implements UsuarioDAO{
         } catch (Exception e) {
             System.out.println("ERROR:"+e.getMessage());
             session.close();
+=======
+        SessionFactory sf = null;
+        Session session = null;
+        List<Usuario> lista = null;
+        Criteria criteria = null;
+        Query query = null;
+        try {
+           sf = HibernateUtil.getSessionFactory();
+           session = sf.openSession();
+           criteria = session.createCriteria(Usuario.class);
+           lista = criteria.list();
+           //Usuario user = (Usuario)session.get(Usuario.class, 1);
+           
+//           query = session.createQuery("from Usuario"); 
+//           lista = query.list();
+        } catch (Exception e) {
+            System.out.println("Error listarUsuario: "+e.getMessage());
+        }finally{
+            if (session!=null) {
+                session.close();
+            }
+>>>>>>> 1ec3233526bfa945f72ac85780584751d7e551a6
         }
         return lista;
     }
