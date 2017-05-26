@@ -14,7 +14,6 @@ public class Ubigeo {
     private int idubigeo;
     @Column(length = 50)
     private String nombre;
-    @Id
     private int ubigeo_sup;
 
     public Ubigeo() {

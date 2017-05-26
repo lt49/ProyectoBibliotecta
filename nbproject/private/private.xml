@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Categoria.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Usuario.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/util/HibernateUtil.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Prestamo.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Libro.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Proveedor.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Turno.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/controller/action.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/dao/UsuarioDAO.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Rol.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Lector.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Persona.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Ejemplar.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Tipo_doc.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Periodo.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/UsuarioDaoImpl.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Prestamo_det.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Editorial.java</file>
+            <file>file:/C:/Users/Alexander/Documents/GIT/ProyectoBibliotecta/src/java/ofelia/model/entity/Ubigeo.java</file>
+        </group>
+    </open-files>
+</project-private>

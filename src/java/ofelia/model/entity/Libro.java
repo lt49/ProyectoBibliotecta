@@ -16,11 +16,8 @@ public class Libro {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int idlibro;
-    @Id
     private int idcategoria;
-    @Id
     private int ideditorial;
-    @Id
     private int idpersona_autor;
     @Column(length = 100)
     private String titulo;

@@ -21,19 +21,19 @@ public class action extends HttpServlet {
         String pass = request.getParameter("pass");
         pass = request.getParameter("pass") == null ? "" : pass;
 
-        UsuarioDAO udi = new UsuarioDaoImpl();
-        Usuario us = udi.validarUsuario(user, pass);
+        UsuarioDAO udao = new UsuarioDaoImpl();
+        Usuario u = udao.validarUsuario(user, pass);
 
         String alertaError = "errorCampo();";
         System.out.println("saasasaassasa  " + user + "asasaasas  " + pass);
-        if (us.getUsuario() != null) {
+        if (u != null) {
             //Trabajando con Sesiones*
             HttpSession session = request.getSession();
-            session.setAttribute("usuarioSesion", us.getUsuario());
-            session.setAttribute("rol", us.getIdrol());
+            session.setAttribute("usuarioSesion", u.getUsuario());
+            session.setAttribute("rol", u.getIdrol());
             //Trabajando con Sesiones*
-            System.out.println("soy la seccion" + us.getUsuario());//CONSOLA
-            switch (us.getIdrol()) {
+            System.out.println("soy la seccion" + u.getUsuario());//CONSOLA
+            switch (u.getIdrol()) {
                 case 1:
                     request.getRequestDispatcher("Inicio.jsp").forward(request, response);
                     break;

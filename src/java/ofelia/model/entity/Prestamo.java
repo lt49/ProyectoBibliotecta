@@ -20,9 +20,7 @@ public class Prestamo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)//para el id auto increment 
     private int idprestamo;
-    @Id
     private int idperiodo;
-    @Id
     private int idpersona;
     @Column(length = 15)
     private String fecha_prestamo;

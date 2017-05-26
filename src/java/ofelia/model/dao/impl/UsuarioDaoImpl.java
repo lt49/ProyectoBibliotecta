@@ -15,6 +15,7 @@ import ofelia.model.util.HibernateUtil;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 
 
@@ -25,30 +26,100 @@ public class UsuarioDaoImpl implements UsuarioDAO{
     
     @Override
     public List<Usuario> listarUsuario() {
-       
+       SessionFactory sf = null;
+        Session session = null;
         List<Usuario> lista = null;
-        
+        Query query = null;
+        try {
+            sf = HibernateUtil.getSessionFactory();
+            session = sf.openSession();
+            lista = new ArrayList<>();
+            query = session.createQuery("FROM Usuario");
+            lista = query.list();
+            session.close();
+        } catch (Exception e) {
+            System.out.println("ERROR:"+e.getMessage());
+            session.close();
+        }
         return lista;
     }
 
     @Override
     public boolean agregarUsuario(Usuario us) {
         boolean flat = false;
-        
+        SessionFactory sf = null;
+        Session session = null;
+        Transaction tx = null;
+        try {
+            sf = HibernateUtil.getSessionFactory();
+            session = sf.openSession();
+            tx = session.beginTransaction();
+            session.save(us);
+            tx.commit();
+            session.close();
+            flat=true;
+        } catch (Exception e) {
+            System.out.println("ERROR:"+e.getMessage());
+            tx.rollback();
+            session.close();
+            flat=false;
+        }
         return flat;
     }
     
     @Override
     public boolean editarUsuario(Usuario us) {
         boolean flat = false;
-
+        SessionFactory sf = null;
+        Session session = null;
+        Transaction tx = null;
+        Usuario u = null;
+        try {
+            sf = HibernateUtil.getSessionFactory();
+            session = sf.openSession();
+            tx = session.beginTransaction();
+            u = new Usuario();
+            u = (Usuario) session.get(Usuario.class, us.getIdusuario());
+            u.setUsuario(us.getUsuario());
+            u.setClave(us.getClave());
+            u.setIdrol(us.getIdrol());
+            u.setIdpersona(us.getIdpersona());
+            session.update(u);
+            tx.commit();
+            session.close();
+            flat=true;
+        } catch (Exception e) {
+            System.out.println("ERROR:"+e.getMessage());
+            tx.rollback();
+            session.close();
+            flat=false;
+        }
         return flat;
     }
 
     @Override
     public boolean eliminarUsuario(int id) {
-        boolean flat = false;
-
+       boolean flat = false;
+        SessionFactory sf = null;
+        Session session = null;
+        Transaction tx = null;
+        Usuario u = null;
+        try {
+            sf = HibernateUtil.getSessionFactory();
+            session = sf.openSession();
+            tx = session.beginTransaction();
+            u = new Usuario();
+            u = (Usuario) session.get(Usuario.class, id);
+            session.delete(u);
+            tx.commit();
+            session.close();
+            flat=true;
+        } catch (Exception e) {
+            System.out.println("ERROR:"+e.getMessage());
+            tx.rollback();
+            session.close();
+            flat=false;
+        }
         return flat;
     }
 

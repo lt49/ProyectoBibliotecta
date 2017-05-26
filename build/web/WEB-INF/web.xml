@@ -4,9 +4,17 @@
         <servlet-name>action</servlet-name>
         <servlet-class>ofelia.controller.action</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControlPersona</servlet-name>
+        <servlet-class>ofelia.controller.ControlPersona</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>/action</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControlPersona</servlet-name>
+        <url-pattern>/ControlPersona</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
