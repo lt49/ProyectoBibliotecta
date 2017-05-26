@@ -26,7 +26,7 @@ public class action extends HttpServlet {
 
         String alertaError = "errorCampo();";
         System.out.println("saasasaassasa  " + user + "asasaasas  " + pass);
-        if (us.getUsuario() != null) {
+        if (us != null) {
             //Trabajando con Sesiones*
             HttpSession session = request.getSession();
             session.setAttribute("usuarioSesion", us.getUsuario());
