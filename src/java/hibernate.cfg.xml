@@ -10,5 +10,7 @@
     <mapping class="ofelia.model.entity.Usuario"/>
     <mapping class="ofelia.model.entity.Proveedor"/>
     <mapping class="ofelia.model.entity.Libro"/>
+    <mapping class="ofelia.model.entity.Ubigeo"/>
+    <mapping class="ofelia.model.entity.Persona"/>
   </session-factory>
 </hibernate-configuration>

@@ -12,7 +12,6 @@ public class Ubigeo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int idubigeo;
-    @Column(length = 50)
     private String nombre;
     private int ubigeo_sup;
 

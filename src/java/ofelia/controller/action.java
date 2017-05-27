@@ -21,12 +21,13 @@ public class action extends HttpServlet {
         String pass = request.getParameter("pass");
         pass = request.getParameter("pass") == null ? "" : pass;
 
-        UsuarioDAO udi = new UsuarioDaoImpl();
-        Usuario us = udi.validarUsuario(user, pass);
+        UsuarioDAO udao = new UsuarioDaoImpl();
+        Usuario us = udao.validarUsuario(user, pass);
 
         String alertaError = "errorCampo();";
         System.out.println("usuario  " + user + "clave  " + pass);
-        if (us.getUsuario() != null) {
+        System.out.println("saasasaassasa  " + user + "asasaasas  " + pass);
+        if (us != null) {
             //Trabajando con Sesiones*
             HttpSession session = request.getSession();
             session.setAttribute("usuarioSesion", us.getUsuario());
