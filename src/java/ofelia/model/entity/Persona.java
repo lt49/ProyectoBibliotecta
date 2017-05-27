@@ -27,7 +27,6 @@ public class Persona {
     private String nombres;
     @Column(length = 50)
     private String apellidos;
-    @Id
     private int idtipo_doc;
     @Column(length = 15)
     private String nro_doc;

@@ -25,7 +25,7 @@ public class action extends HttpServlet {
         Usuario us = udi.validarUsuario(user, pass);
 
         String alertaError = "errorCampo();";
-        System.out.println("saasasaassasa  " + user + "asasaasas  " + pass);
+        System.out.println("usuario  " + user + "clave  " + pass);
         if (us.getUsuario() != null) {
             //Trabajando con Sesiones*
             HttpSession session = request.getSession();

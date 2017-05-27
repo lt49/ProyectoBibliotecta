@@ -3,7 +3,7 @@ package ofelia.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GenerationType;
+//import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -12,13 +12,10 @@ import javax.persistence.Id;
  */
 @Entity
 public class Lector {
-   @Id
    private int idperiodo;
    @Id
    private int idpersona;
-   @Id
    private int idturno;
-   @Id
    private int idtipo;
    private int estado_habil;
    @Column(length = 1)

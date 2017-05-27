@@ -24,9 +24,7 @@ public class Ejemplar {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int idejemplar;
-    @Id
     private int idlibro;
-    @Id
     private int idproveedor;
     @Column(length = 45)
     private String serie_registro;

@@ -21,7 +21,6 @@ public class Categoria {
     private String nombre;
     @Column(length = 100)
     private String descripcion;
-    @Id
     private int idcategoria_sup;
 
     public Categoria() {

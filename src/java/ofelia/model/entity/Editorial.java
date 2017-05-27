@@ -23,7 +23,6 @@ public class Editorial {
     private int ideditorial;
     @Column(length = 45)
     private String nombre;
-    @Id
     private int idubigeo;
 
     public Editorial() {

@@ -6,7 +6,9 @@
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/proyectobiblioteca?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password">admin</property>
+    <property name="hibernate.connection.password">isai11</property>
     <mapping class="ofelia.model.entity.Usuario"/>
+    <mapping class="ofelia.model.entity.Proveedor"/>
+    <mapping class="ofelia.model.entity.Libro"/>
   </session-factory>
 </hibernate-configuration>
