@@ -1,7 +1,7 @@
 <%-- 
     Document   : Inicio
     Created on : 23/04/2017, 12:21:48 AM
-    Author     : Alexander_BV loc
+    Author     : Alexander_BV 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
