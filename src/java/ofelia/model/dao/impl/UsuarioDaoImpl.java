@@ -22,6 +22,7 @@ public class UsuarioDaoImpl implements UsuarioDAO{
     public List<Usuario> listarUsuario() {
         SessionFactory sf = null;
         Session session = null;
+        
         List<Usuario> lista = null;
         Criteria criteria = null;
         Query query = null;
