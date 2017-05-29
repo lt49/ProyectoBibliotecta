@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/ProveedorDaoImpl.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/UsuarioDaoImpl.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/CategoriaDaoImpl.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/UbigeoDaoImpl.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/PersonaDaoImpl.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/TipoDAO.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/ofelia/model/dao/impl/LibroDaoImpl.java</file>
-            <file>file:/D:/Fiorella/Private/USUARIO/Docs/NetBeansProjects/GitHub/ProyectoBibliotecta/src/java/hibernate.cfg.xml</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
